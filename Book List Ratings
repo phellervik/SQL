@@ -1,0 +1,15 @@
+/**Books:
+Great Gatsby (8)
+Greenlights (10)
+God bless this mess (6)
+**/
+
+CREATE TABLE Books(id INTEGER PRIMARY KEY, name TEXT,
+ rating INTEGER);
+ 
+ INSERT INTO Books VALUES (1, "Great Gatsby",8);
+ INSERT INTO Books VALUES(2,"Greenlight",10);
+ INSERT INTO Books VALUES(3,"God bless this mess",6);
+ 
+ SELECT * FROM Books;
+ 
