@@ -1,4 +1,4 @@
-#In this SQL, I'm quering a database with multiple tables quantify statistics about customers and order data.  
+#In this SQL, I'm quering a database with multiple tables quantifying statistics about customers and order data.  
 
 #1. Customers from the US:  
 SELECT FirstName, LastName, CustomerId, Country 
