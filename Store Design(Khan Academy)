@@ -1,0 +1,12 @@
+CREATE TABLE coffee_shop (id INTEGER PRIMARY KEY, item TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO coffee_shop VALUES (1, "Muffins", 6, 3.75);
+INSERT INTO coffee_shop VALUES(2, "Scones", 4, 3);
+INSERT INTO coffee_shop VALUES(3, "Bagels", 8, 2);
+INSERT INTO coffee_shop VALUES(4, "Biscotti", 3, 2.75);
+INSERT INTO coffee_shop VALUES(5, "Croissant", 4, 2.50);
+
+SELECT * FROM coffee_shop ORDER BY price;
+
+SELECT * FROM coffee_shop WHERE quantity > 5 ORDER BY item;
+
+SELECT SUM(quantity) from coffee_shop;
