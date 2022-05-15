@@ -1,0 +1,26 @@
+CREATE TABLE famous_people(id INTEGER PRIMARY KEY,
+    first_name TEXT,
+    last_name TEXT, 
+    dob TEXT,
+    location TEXT);
+    
+    INSERT INTO famous_people (id, first_name, last_name, dob,location)
+    VALUES(1, "Nicole", "Kidman", "June 20 1967", "Hawaii");
+  INSERT INTO famous_people (id, first_name, last_name, dob,location)
+    VALUES(2, "Tom", "Cruise", "June 6 1963", "New York");
+  
+   CREATE TABLE movie (movie_id INTEGER PRIMARY KEY,
+    title INTEGER,
+    year INTEGER);
+
+INSERT INTO movie (movie_id, title, year)
+    VALUES (1, "Far and Away", 1992);
+INSERT INTO movie (movie_id, title, year) 
+    VALUES (2, "Eyes Wide Shut", 1999);
+
+
+SELECT * FROM famous_people
+JOIN movie;
+
+
+
