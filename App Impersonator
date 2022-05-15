@@ -1,0 +1,34 @@
+CREATE TABLE pinterest (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    fashion TEXT,
+    color TEXT);
+    
+INSERT INTO pinterest (fashion, color)
+    VALUES ("dress", "pink");
+INSERT INTO pinterest (fashion, color)
+    VALUES ("hat", "white");
+INSERT INTO pinterest (fashion, color)
+    VALUES ("shoes", "blue");
+
+SELECT * FROM pinterest;
+
+ALTER TABLE pinterest ADD fabric TEXT;
+
+SELECT * FROM pinterest;
+
+UPDATE pinterest SET fabric = "cotton"
+WHERE id = 1;
+
+UPDATE pinterest SET fabric = "polyester"
+WHERE id = 2;
+
+UPDATE pinterest SET fabric = "suede"
+WHERE id = 3;
+
+SELECT * FROM pinterest;
+
+DELETE FROM pinterest WHERE id="3";
+
+SELECT * FROM pinterest; 
+
+
